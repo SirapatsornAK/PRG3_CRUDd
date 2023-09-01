@@ -78,6 +78,8 @@ class _LoginState extends State<Login> {
           }
         },
         child: Text('Login'));
+        
+
   }
 
   Widget backButton() {
@@ -87,17 +89,19 @@ class _LoginState extends State<Login> {
   Widget registerLink() {
     return InkWell(
       child: const Text("Sign Up"),
-      onTap: () {},
+      onTap: () {} ,
+      
+      
     );
   }
 
   Widget textHeader() {
     return Text("Login");
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(97, 166, 216, 177),
       body: Container(
         margin: EdgeInsets.all(10.0),
         child: Form(

@@ -142,6 +142,7 @@ class _UserFormState extends State<UserForm> {
     }
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 88, 194, 111),
         title: const Text("User Form"),
       ),
       body: Container(

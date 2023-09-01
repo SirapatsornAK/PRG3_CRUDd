@@ -95,6 +95,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Home"),
+        backgroundColor: Color.fromARGB(255, 88, 194, 111),
       ),
       drawer: SideMenu(),
       body: mainBody,
@@ -111,5 +112,6 @@ class _HomeState extends State<Home> {
         },
         child: const Icon(Icons.person_add_alt_1),
       ),
+      backgroundColor: Color.fromARGB(97, 166, 216, 177),
     );
   }}

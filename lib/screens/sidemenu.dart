@@ -18,7 +18,10 @@ class SideMenu extends StatelessWidget {
       accountName = user.fullname!;
       accountEmail = user.email!;
     }
+  
     return Drawer(
+        child: Container(
+      color: Color.fromARGB(97, 166, 216, 177),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.max,
@@ -30,6 +33,9 @@ class SideMenu extends StatelessWidget {
               backgroundImage: NetworkImage(accountUrl),
               backgroundColor: Colors.black12,
             ),
+            decoration: BoxDecoration(
+            color: const Color.fromARGB(255, 88, 194, 111),
+          ),
           ),
           ListTile(
             title: Text('Home'),
@@ -38,7 +44,7 @@ class SideMenu extends StatelessWidget {
               Navigator.pushNamed(context, Home.routeName);
             },
           ),
-           ListTile(
+          ListTile(
             title: Text('Login'),
             leading: Icon(Icons.login_outlined),
             onTap: () {
@@ -47,6 +53,6 @@ class SideMenu extends StatelessWidget {
           ),
         ],
       ),
-    );
+    ));
   }
 }

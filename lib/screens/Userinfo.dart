@@ -9,6 +9,7 @@ class UserInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     Users user = ModalRoute.of(context)!.settings.arguments as Users;
     return Scaffold(
+      backgroundColor: Color.fromARGB(97, 166, 216, 177),
       appBar: AppBar(
         title: Text("User Info"),
       ),
